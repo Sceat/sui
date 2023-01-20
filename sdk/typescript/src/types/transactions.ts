@@ -497,7 +497,7 @@ export function getTotalGasUsed(
   const gasSummary = getExecutionStatusGasSummary(data);
   return gasSummary
     ? gasSummary.computationCost +
-        gasSummary.storageCost -
+        gasSummary.storageCost +
         gasSummary.storageRebate
     : undefined;
 }
